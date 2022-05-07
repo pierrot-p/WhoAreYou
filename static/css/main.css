@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e9ebfc;
+  background-color: #2e303e;
+  margin-top: 300px;
+}
+
+form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+form input {
+  margin-top: 20px;
+  padding: 4px;
+  border: none;
+  border-radius: 7px;
+}
