@@ -1,4 +1,18 @@
 {% extends "base.html" %} {% block title %}Who are you? Results{% endblock %} {%
 block content %}
-<img src="{{ url_for('download', filename=filename) }}" />
+<div class="predictions">
+  <img
+    src="./static/{{ source }}"
+    alt="{{ source }}"
+    width="500px"
+    height="500px"
+  />
+</div>
+
+<div class="stats">
+  <h3>Age: {{ dominant_age }}</h3>
+  <h3>Gender: {{ dominant_gender }}</h3>
+  <h3>Dominant Emotion: {{ dominant_emotion }}</h3>
+  <h3>Dominant Race: {{ dominant_race }}</h3>
+</div>
 {% endblock %}
