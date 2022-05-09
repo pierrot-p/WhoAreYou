@@ -5,15 +5,19 @@ body {
   text-align: center;
   color: #e9ebfc;
   background-color: #2e303e;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 form {
-  display: block;
+  border: none;
+  border-radius: 8px;
+  background-color: #5d617c;
+  width: 50%;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10px;
+  margin-top: 40px;
   padding: 10px;
 }
 
@@ -22,4 +26,44 @@ form input {
   padding: 4px;
   border: none;
   border-radius: 7px;
+}
+
+.links {
+  margin: 10px;
+}
+
+.links a {
+  margin-left: 5px;
+}
+
+.predictions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.stats {
+  display: inline-block;
+  justify-content: center;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.codebox {
+  margin: 10px;
+  border: 1px solid black;
+  background-color: #5d617c;
+  white-space: pre-line;
+  padding: 10px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.codebox code {
+  color: black;
+}
+
+img {
+  border: none;
+  border-radius: 8px;
 }

@@ -7,12 +7,17 @@ block content %}
     width="500px"
     height="500px"
   />
-</div>
 
-<div class="stats">
-  <h3>Age: {{ dominant_age }}</h3>
-  <h3>Gender: {{ dominant_gender }}</h3>
-  <h3>Dominant Emotion: {{ dominant_emotion }}</h3>
-  <h3>Dominant Race: {{ dominant_race }}</h3>
+  <div class="stats">
+    <h3>Age: {{ dominant_age }}</h3>
+    <h3>Gender: {{ dominant_gender }}</h3>
+    <h3>Dominant Emotion: {{ dominant_emotion }}</h3>
+    <h3>Dominant Race: {{ dominant_race }}</h3>
+  </div>
 </div>
+<div class="codebox">
+  <h3>.json complete analysis</h3>
+  <code> {{ stats }} </code>
+</div>
+<a href="/">Go back.</a>
 {% endblock %}
