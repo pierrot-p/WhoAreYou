@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block title %}DEBUG{% endblock %} {% block content
+%}
+
+<h2>You just deleted every image stored in the server. thanks!</h2>
+<a class="debugdelete" href="{{ url_for('deletedebug') }}">Debug</a>
+<p>thanks for debbuging!</p>
+<a href="/">Go Back!</a>
+{% endblock %}
