@@ -9,6 +9,8 @@ from flask import (
 from werkzeug.utils import secure_filename
 import os
 import os.path
+import time
+import threading
 import cv2
 from deepface import DeepFace
 
@@ -60,6 +62,14 @@ def upload_file():
             )
 
     return render_template("index.html")
+
+
+@app.route("/delete/")
+def deletedebug():
+    for file in os.listdir(UPLOAD_FOLDER):
+        if file.endswith((".png", ".jpg", ".jpeg")):
+            os.remove(os.path.join(UPLOAD_FOLDER, file))
+    return render_template("delete.html")
 
 
 if __name__ == "__main__":
